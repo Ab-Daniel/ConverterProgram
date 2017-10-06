@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class ConverterTest {
+
+	public static void main(String[] args) 
+	{
+		
+		int meters  = Integer.parseInt(JOptionPane.showInputDialog("Enter an integer for meters")); //user input for the first integer
+		Converter convertTheseMeters = new Converter (meters); //sets the object equal to the integer entered
+		
+		System.out.println("Meters to miles: " + convertTheseMeters.toMiles(meters)); //prints meters to miles
+		System.out.println("Meters to feet: " + convertTheseMeters.toFeet(meters)); //prints meters to feet
+		System.out.println("Meters to inches: " + convertTheseMeters.toInches(meters)); //prints meters to inches
+		System.out.println("Meters: " + meters);//prints meters to inches
+		
+	}
+
+}
