@@ -1,0 +1,41 @@
+
+public class Converter 
+{
+	
+	public Converter (double aConversionFactor) //constructor for meters
+	{
+		
+		meters = aConversionFactor;
+		
+	}
+	
+	public double toInches(double inches) //method to convert meters to inches
+	{
+		
+		return meters / inch;
+		
+	}
+
+	public double toFeet(double feet) //method to convert meters to inches
+	{
+		
+		return meters / foot;
+		
+	}
+	
+	public double toMiles(double miles) //method to convert meters to miles
+	{
+		
+		return meters / mile;
+		
+	}
+	
+	private static int mile = 1609; //constant for mile
+	
+	private static double foot = .305; //constant for foot
+	
+	private static double inch = .025; //constant for inch
+	
+	private double meters; //instance
+	
+}
